@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(to bottom, #111, #333);
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+div#badge {
+    position: relative;
+    background: linear-gradient(to bottom, #5c5c5c, #838383);
+    border-radius: 3px;
+    padding: 16px;
+    margin: 18px;
+}
+
+div#badge span {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 48px;
+}
+
+div#badge::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(to bottom, #252525, #5c5c5c);
+    border-radius: 7px;
+    z-index: -1;
+}
+
+div#formsspace {
+    position: relative;
+    background: linear-gradient(to bottom, #005c00, #008300);
+    border-radius: 3px;
+    padding: 16px;
+    margin: 18px;
+}
+
+div#formsspace::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(to bottom, #002500, #005c00);
+    border-radius: 7px;
+    z-index: -1;
+}
+
+div#footer {
+    position: relative;
+    background: linear-gradient(to bottom, #5c0000, #830000);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 16px;
+    margin: 18px;
+    margin-bottom: 0;
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+div#footer::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: 0;
+    background: linear-gradient(to bottom, #250000, #5c0000);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    z-index: -1;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
